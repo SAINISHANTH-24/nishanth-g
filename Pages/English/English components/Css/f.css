@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.flag {
+  position: relative;
+  cursor: pointer;
+  animation: move 5s infinite alternate;
+}
+
+.flag-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}

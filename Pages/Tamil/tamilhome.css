@@ -1,0 +1,19 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30%;
+    background: #208ee8;
+    padding: 2em;
+    border-radius: 1em;
+}
+a{
+    all: unset;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 1em;
+    padding: .6em;
+}
+a:hover{
+    color: blueviolet;
+}

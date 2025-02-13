@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  background-color: #f7faff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: #4a90e2;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.color {
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.color img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 223, 0, 0.8);
+}
+
+.color p {
+  margin: 10px 0 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.color.clicked img {
+  animation: playfulBounce 1s ease, rotate 0.8s ease;
+}
+
+@keyframes playfulBounce {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

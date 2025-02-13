@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Learning for Kids</title>
+    <link rel="stylesheet" href="../Css/add sub div.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maths Learning for Kids</h1>
+        <div class="operations">
+            <button onclick="startQuiz('addition')">Addition</button>
+            <button onclick="startQuiz('subtraction')">Subtraction</button>
+            <button onclick="startQuiz('multiplication')">Multiplication</button>
+            <button onclick="startQuiz('division')">Division</button>
+        </div>
+        <div id="quiz-area" class="hidden">
+            <h2 id="quiz-title"></h2>
+            <p id="question"></p>
+            <input type="number" id="answer" placeholder="Enter your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="../Js/add sub div.js"></script>
+</body>
+</html>

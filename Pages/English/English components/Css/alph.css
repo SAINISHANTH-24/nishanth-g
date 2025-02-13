@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9f4;
+    color: #000000;
+
+}
+h1 {
+    font-size: 50px;
+    color: #fa0303;
+}
+
+.letter {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #666;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    font-size: 300px;
+    font-weight: bold;
+    background-color: #00ff48;
+    cursor: pointer;
+}
+
+.letter:hover {
+    background-color: #ffffff;
+}

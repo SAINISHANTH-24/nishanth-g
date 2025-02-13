@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.shapes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shape {
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.shape img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.shape:hover img {
+  transform: scale(1.1);
+}
+
+.shape p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #333;
+}

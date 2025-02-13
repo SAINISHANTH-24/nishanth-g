@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #033dfa;
+}
+
+.rhyme {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rhyme img {
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.rhyme img:hover {
+    transform: scale(1.1);
+}
+
+.rhyme p {
+    margin-top: 20px;
+    font-size: 50px;
+    color: #000000;
+}

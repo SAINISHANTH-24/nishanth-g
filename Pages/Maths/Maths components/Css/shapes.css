@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.shapes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.shape, .drop-zone {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.shape {
+    cursor: grab;
+    border: 2px solid #ddd;
+}
+
+.circle {
+    background-color: #ff6b6b;
+    border-radius: 50%;
+}
+
+.square {
+    background-color: #1dd1a1;
+}
+
+.star {
+    background: #6ef607;
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    );
+}
+
+.pentagon {
+    background: #5f27cd;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.drop-zone {
+    border: 2.5px dashed #ffffff;
+}
+
+.correct {
+    border: 5px solid green;
+}
+
+.wrong {
+    border: 5px solid red;
+}
