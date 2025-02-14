@@ -15,4 +15,3 @@ function playAudioAndAnimate(letterId) {
       }, 1000); 
     }
   }
-  
