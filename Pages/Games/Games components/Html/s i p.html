@@ -7,11 +7,26 @@
         <link rel="stylesheet" href="../Css/s i p.css">
         <script src="../Js/s i p.js"></script>
     </head>
-
+    <div class="header">
+        <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+        <div class="nav-buttons">
+            <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+        </div>
+    </div>
     <body>
         <img id="title" src="../../../../asset/Games/Sliding the image/logo.png">
         <div id="board">
         </div>
         <h1>Turns: <span id="turns">0</span></h1>
     </body>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function goHome() {
+            window.location.href = "../../../../Index.html";
+        }
+    </script>
 </html>

@@ -6,10 +6,26 @@
   <title>Learn Months Grid</title>
   <link rel="stylesheet" href="../Css/m.css">
 </head>
+<div class="header">
+  <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+  <div class="nav-buttons">
+      <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+      <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+  </div>
+</div>
 <body>
   
   <h1>English Months</h1>
   <div id="app" class="grid-container"></div> 
   <script src="../Js/m.js"></script>
 </body>
+<script>
+  function goBack() {
+      window.history.back();
+  }
+
+  function goHome() {
+      window.location.href = "../../../../Index.html";
+  }
+</script>
 </html>

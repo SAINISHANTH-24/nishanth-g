@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Learner - Home</title>
+    <link rel="stylesheet" href="./Index.css">
+</head>
+<body>
+
+    <header>
+        <img src="./asset/website Home page logo/Website Logo.jpg" alt="Baby Learner Logo" class="left-logo">
+        <h1>Baby Learner</h1>
+        <p>Learn, Play, and Explore!</p>
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav class="menu" id="menu">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+            <li><a href="#" onclick="showPopup('about-section')">About</a></li>
+            <li><a href="#" onclick="showPopup('contact-section')">Contact</a></li>
+            <li><a href="#" onclick="showPopup('feedback-section')">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="./Pages/Tamil/tamilHome.html" class="card tamil">
+            <img src="./asset/website Home page logo/Tamil logo.jpg" alt="Tamil Logo">
+            <button>தமிழ்</button>
+        </a>
+        <a href="./Pages/English/englishHome.html" class="card english">
+            <img src="./asset/website Home page logo/english logo.jpg" alt="English Logo">
+            <button>English</button>
+        </a>
+        <a href="./Pages/Maths/mathsHome.html" class="card maths">
+            <img src="./asset/website Home page logo/maths logo.jpg" alt="Maths Logo">
+            <button>Mathematics</button>
+        </a>
+        <a href="./Pages/Games/gameHome.html" class="card games">
+            <img src="./asset/website Home page logo/games logo.jpg" alt="Games Logo">
+            <button>Games</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Baby Learner. All rights reserved.</p>
+    </footer>
+
+    <!-- About Section -->
+    <div id="about-section" class="popup" onclick="outsideClick(event, 'about-section')">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('about-section')">&times;</span>
+            <h2>About Baby Learner</h2>
+            <p>Baby Learner is an interactive learning platform for kids to explore Tamil, English, Mathematics, and Games.</p>
+            <p>Our goal is to make learning fun and engaging for children.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="popup" onclick="outsideClick(event, 'contact-section')">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('contact-section')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Email: sainishanth24112003@gmail.com</p>
+            <p>Phone: +91 9034347867</p>
+            <p>Address: 123, Learning Street, Chennai, India</p>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div id="feedback-section" class="popup" onclick="outsideClick(event, 'feedback-section')">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('feedback-section')">&times;</span>
+            <h2>Feedback</h2>
+            <textarea id="feedback-message" placeholder="Type your feedback here..."></textarea>
+            <button onclick="sendFeedback()">Submit</button>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('show');
+        }
+    
+        function showPopup(id) {
+            document.getElementById(id).style.display = "block";
+            toggleMenu(); // Close menu when popup opens
+        }
+    
+        function closePopup(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        function sendFeedback() {
+            var feedbackMessage = document.getElementById("feedback-message").value;
+            if (feedbackMessage.trim() === "") {
+                alert("Please enter your feedback before submitting.");
+                return;
+            }
+            
+            var email = "sainishanth24112003@gmail.com"; // Change to your email
+            var subject = "Baby Learner Feedback";
+            var body = encodeURIComponent(feedbackMessage);
+            
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+    
+        function outsideClick(event, id) {
+            var popup = document.getElementById(id);
+            var popupContent = popup.querySelector(".popup-content");
+    
+            // Mouse Click Outside -> Close
+            if (!popupContent.contains(event.target)) {
+                closePopup(id);
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

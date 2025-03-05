@@ -1,32 +1,36 @@
-const audioPlayer = document.getElementById('audio-player');
-const kuralText = document.getElementById('kural-text');
-const prevKuralButton = document.getElementById('prev-kural');
-const nextKuralButton = document.getElementById('next-kural');
-const playAudioButton = document.getElementById('play-audio');
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".adhigaram-btn");
+    const image = document.getElementById("kural-image");
+    const audio = document.getElementById("kural-audio");
+    const displayBox = document.getElementById("display-box");
+    const playAudioBtn = document.getElementById("play-audio-btn");
 
-let currentKuralIndex = 0;
+    let currentAudio = null;
 
-function updateKural() {
-    kuralText.textContent = kurals[currentKuralIndex];
-    audioPlayer.currentTime = currentKuralIndex * 5; // ஒவ்வொரு குறள் 5 வினாடி
-}
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            let id = this.getAttribute("data-id");
 
-prevKuralButton.addEventListener('click', () => {
-    if (currentKuralIndex > 0) {
-        currentKuralIndex--;
-        updateKural();
-    }
+            // Update Image & Audio Source
+            image.src = `assets/images/${id}.png`;
+            audio.src = `assets/audio/${id}.mp3`;
+
+            // Show display box
+            displayBox.style.display = "block";
+
+            // Stop previous audio if playing
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            currentAudio = audio;
+        });
+    });
+
+    // Play audio when button is clicked
+    playAudioBtn.addEventListener("click", function() {
+        if (currentAudio) {
+            currentAudio.play();
+        }
+    });
 });
-
-nextKuralButton.addEventListener('click', () => {
-    if (currentKuralIndex < kurals.length - 1) {
-        currentKuralIndex++;
-        updateKural();
-    }
-});
-
-playAudioButton.addEventListener('click', () => {
-    audioPlayer.play();
-});
-
-updateKural();

@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./englishHome.css">
+    <title>English Home</title>
+    <link rel="stylesheet" href="englishHome.css">
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header class="top-header">
+        <img src="../../asset/website Home page logo/Website Logo.jpg" alt="Baby Learner Logo" class="logo">
+        <div class="nav-buttons">
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+        </div>
+    </header>
+
+    <!-- Tamil Learning List with Images -->
     <div class="list">
-    <a href="./English components/Html/a for apple.html"> ALPHABET IMAGES </a>
-    <a href="./English components/Html/alph.html"> ALPHABET </a>
-    <a href="./English components/Html/birds animals.html"> BIRDS ANIMALS IMAGES </a>
-    <a href="./English components/Html/rhymes.html"> RHYMES </a>
-    <a href="./English components/Html/pledge.html"> PLEDGE </a>
-    <a href="./English components/Html/m.html"> ENGLISH MONTHS </a>
-    <a href="./English components/Html/f.html"> COUNTRY FLAGS </a>
-    <a href="./English components/Html/">  </a>
-</div>
+        <h2>📚 English Learning</h2>
+        <div class="content-box">
+            <a href="./English components/Html/alph.html">
+                <img src="../../asset/English Home Page Logo/A.jpg" alt="Alphabets"> Alphabets
+            </a>
+            <a href="./English components/Html/a for apple.html">
+                <img src="../../asset/English Home Page Logo/A Apple.jpg" alt="Alphabets Images"> Alphabets Images
+            </a>
+            <a href="./English components/Html/birds animals.html">
+                <img src="../../asset/English Home Page Logo/Bird.jpg" alt="Birds Animals Images"> Birds Animals Images
+            </a>
+            <a href="./English components/Html/rhymes.html">
+                <img src="../../asset/English Home Page Logo/Rhymes.jpg" alt="Rhymes"> Rhymes
+            </a>
+            <a href="./English components/Html/m.html">
+                <img src="../../asset/English Home Page Logo/Month.jpg" alt="English Months"> English Months
+            </a>
+            <a href="./English components/Html/pledge.html">
+                <img src="../../asset/English Home Page Logo/Pledge.gif" alt="Pledge"> Pledge
+            </a>
+            <a href="./English components/Html/f.html">
+                <img src="../../asset/English Home Page Logo/Country Flags.jpg" alt="Country Flags"> Country Flags
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        function goHome() {
+            window.location.href = "../../Index.html";
+        }
+    </script>
+
 </body>
 </html>

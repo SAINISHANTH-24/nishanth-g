@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids Learning Story Music Player</title>
-  <link rel="stylesheet" href="../Css/mp.css">
-</head>
-<body>
-  <div class="player-container">
-    <h1>Kids Story Player</h1>  
-    <img id="story-image" src="images/story1.png" alt="Story Image">
-    <div class="image-container">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Css/mp.css" />
+  </head>
+  <div class="header">
+    <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+    <div class="nav-buttons">
+        <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+        <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
     </div>
-    <div class="audio-controls">
-      <button id="prev-btn">⬅ Previous</button>
-      <button id="play-pause-btn">▶ Play</button>
-      <button id="next-btn">Next ➡</button>
+</div>
+  <body>
+    <div class="wrapper">
+      <div class="stats-container">
+        <div id="moves-count"></div>
+        <div id="time"></div>
+      </div>
+      <div class="game-container"></div>
+      <button id="stop" class="hide">Stop Game</button>
     </div>
-    <div class="timeline">
-      <input type="range" id="progress" value="0" min="0">
-      <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+    <div class="controls-container">
+      <p id="result"></p>
+      <button id="start">Start Game</button>
     </div>
-  </div>
-  <script src="../Js/mp.js"></script>
-</body>
+    <!-- Script -->
+    <script src="../Js/mp.js"></script>
+  </body>
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goHome() {
+        window.location.href = "../../../../Index.html";
+    }
+</script>
 </html>

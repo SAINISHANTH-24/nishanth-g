@@ -26,13 +26,15 @@ document.getElementById('generate-button').addEventListener('click', function ()
         quizDiv.innerHTML += `
             <div>
                 <label>${question}</label>
-                <input type="number" id="answer-${i}" placeholder="Your answer">
+                <input type="number" id="answer-${i}" placeholder="Your answer" class="quiz-input">
+                <span id="result-${i}"></span>
             </div>`;
     }
     quizContainer.classList.remove('hidden');
     resultContainer.classList.add('hidden');
 });
 
+// Submit Answers and Show Correct/Incorrect
 document.getElementById('submit-button').addEventListener('click', function () {
     const tableNumber = parseInt(document.getElementById('table-number').value);
     let correctAnswers = 0;
@@ -40,8 +42,15 @@ document.getElementById('submit-button').addEventListener('click', function () {
     for (let i = 1; i <= 10; i++) {
         const userAnswer = parseInt(document.getElementById(`answer-${i}`).value);
         const correctAnswer = tableNumber * i;
+        const resultSpan = document.getElementById(`result-${i}`);
+        
         if (userAnswer === correctAnswer) {
+            resultSpan.textContent = "✔️";
+            resultSpan.style.color = "green";
             correctAnswers++;
+        } else {
+            resultSpan.textContent = `❌ Correct: ${correctAnswer}`;
+            resultSpan.style.color = "red";
         }
     }
 

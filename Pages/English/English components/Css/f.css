@@ -1,37 +1,140 @@
+/* General Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #171818;
+  margin-top: 150px;
+}
+
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: white;
+  color: #007bff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+/* Flags Section */
+.container {
+  margin-top: 150px; /* To avoid overlap with fixed header */
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  width: 100%;
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
+/* Grid Layout */
+.flags-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 columns */
+  gap: 50px;
+  width: 200%;
+  height: 200%;
+  justify-items: center;
 }
 
+/* Flags Box */
 .flag {
-  position: relative;
-  cursor: pointer;
-  animation: move 5s infinite alternate;
-}
-
-.flag-img {
   width: 200px;
-  height: auto;
-  border-radius: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Flag Box (Static) */
+.flag-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Flag Image (Animated) */
+.flag-box img {
+  width: 150px;
+  height: 150px;
+  animation: move 3s infinite alternate;
+}
+
+/* Flag Text */
+.flag p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 5px;
+}
+
+/* Animation */
 @keyframes move {
   0% {
       transform: translateY(0);
   }
   100% {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flags-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
   }
 }

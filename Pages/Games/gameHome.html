@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./gamesHome.css">
+    <title>Game Home</title>
+    <link rel="stylesheet" href="gamesHome.css">
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header class="top-header">
+        <img src="../../asset/website Home page logo/Website Logo.jpg" alt="Baby Learner Logo" class="logo">
+        <div class="nav-buttons">
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+        </div>
+    </header>
+
+    <!-- Tamil Learning List with Images -->
     <div class="list">
-    <a href="./Games components/Html/puzzles.html"> NUMBER PUZZLES </a>
-    <a href="./Games components/Html/s i p.html"> IMAGE PUZZLES </a>
-    <a href="./Games components/Html/xox.html"> X O X </a>
-    <a href="./Games components/Html/c t b.html"> CLICK THE BALL </a>
-    <a href="./Games components/Html/paint.html"> PAINT </a>
-    <a href="./Games components/Html/mp.html"> MUSIC PLAYER </a>
-    <a href="./Games components/Html/">  </a>
-    <a href="./Games components/Html/">  </a>
-</div>
+        <h2>📚 Games Learning</h2>
+        <div class="content-box">
+            <a href="./Games components/Html/puzzles.html">
+                <img src="../../asset/Games Home Page Logo/N Puzzles.jpg" alt="Number Puzzles"> Number Puzzles
+            </a>
+            <a href="./Games components/Html/c t b.html">
+                <img src="../../asset/Games Home Page Logo/C T B.jpg" alt="Click The Ball"> Click The Ball
+            </a>
+            <a href="./Games components/Html/s i p.html">
+                <img src="../../asset/Games Home Page Logo/S I P.jpg" alt="Image Sliding Puzzles"> Image Sliding Puzzles
+            </a>
+            <a href="./Games components/Html/xox.html">
+                <img src="../../asset/Games Home Page Logo/X O X.jpg" alt="xox"> xox
+            </a>
+            <a href="./Games components/Html/paint.html">
+                <img src="../../asset/Games Home Page Logo/Paint.jpg" alt="Paint"> Paint
+            </a>
+            <a href="./Games components/Html/mp.html">
+                <img src="../../asset/Games Home Page Logo/Music Player.jpg" alt="Kids Story Player"> Kids Story Player
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        function goHome() {
+            window.location.href = "../../Index.html";
+        }
+    </script>
+
 </body>
 </html>

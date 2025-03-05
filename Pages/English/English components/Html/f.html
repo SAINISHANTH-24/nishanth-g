@@ -7,56 +7,90 @@
     <link rel="stylesheet" href="../Css/f.css">
 </head>
 <body>
-    <div class="container">
-        <div class="flag" onclick="playSound('india')">
-            <img src="../../../../asset/English/Flags/INDIA.jpg" alt="India Flag" class="flag-img">
-            <p>INDIA</p>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo">
+        <div class="nav-buttons">
+            <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
         </div>
-
-        <div class="flag" onclick="playSound('usa')">
-            <img src="../../../../asset/English/Flags/usa.jpg" alt="USA Flag" class="flag-img">
-            <P>USA</P>
-        </div>
-
-        <div class="flag" onclick="playSound('brazil')">
-            <img src="../../../../asset/English/Flags/brazil.jpg" alt="Brazil Flag" class="flag-img">
-            <p>Brazil</p>
-        </div>
-
-        <div class="flag" onclick="playSound('chinna')">
-          <img src="../../../../asset/English/Flags/CHINNA.jpg" alt="CHINNA Flag" class="flag-img">
-          <p>CHINNA</p>
-      </div>
-
-      <div class="flag" onclick="playSound('france')">
-        <img src="../../../../asset/English/Flags/FRANCE.jpg" alt="FRANCE Flag" class="flag-img">
-        <p>FRANCE</p>
     </div>
 
-    <div class="flag" onclick="playSound('germany')">
-      <img src="../../../../asset/English/Flags/GERMANY.jpg" alt="GERMANY Flag" class="flag-img">
-      <p>GERMANY</p>
-  </div>
+    <h1 class="title">Learn Country Flags</h1>
 
-  <div class="flag" onclick="playSound('italy')">
-    <img src="../../../../asset/English/Flags/ITALY.jpg" alt="ITALY Flag" class="flag-img">
-    <p>ITALY</p>
-</div>
+    <!-- Flags Section -->
+    <div class="container">
+        <div class="flags-grid">
+            <div class="flag" onclick="playSound('india')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/INDIA.jpg" alt="India Flag">
+                </div>
+                <p>INDIA</p>
+            </div>
 
-<div class="flag" onclick="playSound('japan')">
-  <img src="../../../../asset/English/Flags/JAPAN.jpg" alt="JAPAN Flag" class="flag-img">
-  <p>JAPAN</p>
-</div>
+            <div class="flag" onclick="playSound('usa')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/usa.jpg" alt="USA Flag">
+                </div>
+                <p>USA</p>
+            </div>
 
-<div class="flag" onclick="playSound('poland')">
-  <img src="../../../../asset/English/Flags/POLAND.jpg" alt="POLAND Flag" class="flag-img">
-  <p>POLAND</p>
-</div>
+            <div class="flag" onclick="playSound('brazil')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/brazil.jpg" alt="Brazil Flag">
+                </div>
+                <p>BRAZIL</p>
+            </div>
 
-<div class="flag" onclick="playSound('russia')">
-  <img src="../../../../asset/English/Flags/RUSSIA.jpg" alt="RUSSIA Flag" class="flag-img">
-  <p>RUSSIA</p>
-</div>
+            <div class="flag" onclick="playSound('chinna')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/CHINNA.jpg" alt="Chinna Flag">
+                </div>
+                <p>CHINA</p>
+            </div>
+
+            <div class="flag" onclick="playSound('france')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/FRANCE.jpg" alt="France Flag">
+                </div>
+                <p>FRANCE</p>
+            </div>
+
+            <div class="flag" onclick="playSound('germany')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/GERMANY.jpg" alt="Germany Flag">
+                </div>
+                <p>GERMANY</p>
+            </div>
+
+            <div class="flag" onclick="playSound('italy')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/ITALY.jpg" alt="Italy Flag">
+                </div>
+                <p>ITALY</p>
+            </div>
+
+            <div class="flag" onclick="playSound('japan')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/JAPAN.jpg" alt="Japan Flag">
+                </div>
+                <p>JAPAN</p>
+            </div>
+
+            <div class="flag" onclick="playSound('poland')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/POLAND.jpg" alt="Poland Flag">
+                </div>
+                <p>POLAND</p>
+            </div>
+
+            <div class="flag" onclick="playSound('russia')">
+                <div class="flag-box">
+                    <img src="../../../../asset/English/Flags/RUSSIA.jpg" alt="Russia Flag">
+                </div>
+                <p>RUSSIA</p>
+            </div>
+        </div>
     </div>
 
     <audio id="india-sound" src="../../../../asset/English/Flags/india.mp3"></audio>
@@ -72,5 +106,15 @@
 
 
     <script src="../Js/f.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goHome() {
+            window.location.href = "../../../../Index.html";
+        }
+    </script>
+
 </body>
 </html>

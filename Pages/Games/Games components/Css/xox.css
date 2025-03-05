@@ -1,76 +1,139 @@
+/* Global Styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
-  body {
-    height: 100vh;
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-  }
-  html {
-    font-size: 16px;
-  }
-  .wrapper {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  .container {
-    width: 70vmin;
-    height: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vmin;
-  }
-  .button-option {
-    background: #ffffff;
-    height: 22vmin;
-    width: 22vmin;
-    border: none;
-    border-radius: 8px;
-    font-size: 12vmin;
-    color: #d161ff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  #restart {
-    font-size: 1.3em;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: #0a0027;
-    color: #ffffff;
-    border: none;
-    position: relative;
-    margin: 1.5em auto 0 auto;
-    display: block;
-  }
-  .popup {
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 12vmin;
-  }
-  #new-game {
-    font-size: 0.6em;
-    padding: 0.5em 1em;
-    background-color: #0a0027;
-    color: #ffffff;
-    border-radius: 0.2em;
-    border: none;
-  }
-  #message {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1em;
-  }
-  .popup.hide {
-    display: none;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+html {
+  font-size: 16px;
+}
+
+/* Header Section */
+.header {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align logo left, buttons right */
+  padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Navigation Buttons (Right Side) */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  background: white;
+  color: #007bff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+/* Game Board (Adjusted Position) */
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 58%; /* Moved up */
+  left: 50%;
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Restart Button */
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+
+/* Popup Message */
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide {
+  display: none;
+}
+
+/* Navigation Buttons */
+.back-btn {
+  background: white;
+  color: #f44336;
+}
+.back-btn:hover {
+  background: #d32f2f;
+  color: white;
+}
+.home-btn {
+  background: white;
+  color: #28a745;
+}
+.home-btn:hover {
+  background: #218838;
+  color: white;
+}

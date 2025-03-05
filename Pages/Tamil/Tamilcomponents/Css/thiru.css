@@ -1,52 +1,126 @@
-/* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
     text-align: center;
-}
-
-.container {
-    max-width: 600px;
-    margin: auto;
+    background-color: #f8f9fa;
+    margin: 0;
     padding: 20px;
 }
 
 h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+    color: #4a148c;
     margin-bottom: 20px;
 }
 
-.kural-container {
-    font-size: 1.2rem;
-    color: #555;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #007BFF;
-    color: #fff;
+.adhigaram-btn {
+    background: #673ab7;
+    color: white;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.adhigaram-btn:hover {
+    background: #512da8;
+    transform: scale(1.1);
+}
+
+/* Display Box */
+.display-box {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    display: none; /* Hidden initially */
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#play-audio-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#play-audio-btn:hover {
+    background: #e68900;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.back-btn {
+    background: white;
+    color: #f44336;
+}
+.back-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+.home-btn {
+    background: white;
+    color: #28a745;
+}
+.home-btn:hover {
+    background: #218838;
+    color: white;
+}
+.header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.navigation {
-    margin-top: 20px;
+    font-size: 18px;
+    transition: 0.3s;
 }

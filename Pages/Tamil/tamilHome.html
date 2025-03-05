@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./tamilhome.css">
+    <title>Tamil Home</title>
+    <link rel="stylesheet" href="tamilhome.css">
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header class="top-header">
+        <img src="../../asset/website Home page logo/Website Logo.jpg" alt="Baby Learner Logo" class="logo">
+        <div class="nav-buttons">
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+        </div>
+    </header>
+
+    <!-- Tamil Learning List with Images -->
     <div class="list">
-    <a href="./Tamilcomponents/Html/thiru.html">திருக்குறள்</a>
-    <a href="./Tamilcomponents/Html/தமிழ் தாய்.html">தமிழ்தாய் வாழ்த்து </a>
-    <a href="./Tamilcomponents/Html/month.html">தமிழ் மாதம் </a>
-    <a href="./Tamilcomponents/Html/National.html">தேசிய கீதம் </a>
-    <a href="./Tamilcomponents/Html/a aa e.html">உயிர் எழுத்துகள்</a>
-    <a href="./Tamilcomponents/Html/க.html"> மெய் எழுத்துகள்</a>
-    <a href="./Tamilcomponents/Html/a amma.html"> உயிர் எழுத்துகள் படங்கள் </a>
-    <a href="./Tamilcomponents/Html/ka kapal.html"> மெய் எழுத்துகள் படங்கள் </a>
-</div>
+        <h2>📚 தமிழ் கற்றல் பகுதி</h2>
+        <div class="content-box">
+            <a href="./Tamilcomponents/Html/thiru.html">
+                <img src="../../asset/Tamil Home Page Logo/Thirukkural.jpg" alt="திருக்குறள்"> திருக்குறள்
+            </a>
+            <a href="./Tamilcomponents/Html/தமிழ் தாய்.html">
+                <img src="../../asset/Tamil Home Page Logo/Tamil Thaai Vaazhtu.jpg" alt="தமிழ்தாய் வாழ்த்து"> தமிழ்தாய் வாழ்த்து
+            </a>
+            <a href="./Tamilcomponents/Html/month.html">
+                <img src="../../asset/Tamil Home Page Logo/Month.jpg" alt="தமிழ் மாதம்"> தமிழ் மாதம்
+            </a>
+            <a href="./Tamilcomponents/Html/National.html">
+                <img src="../../asset/Tamil Home Page Logo/National Anthem.jpg" alt="தேசிய கீதம்"> தேசிய கீதம்
+            </a>
+            <a href="./Tamilcomponents/Html/a aa e.html">
+                <img src="../../asset/Tamil Home Page Logo/A.jpg" alt="உயிர் எழுத்துகள்"> உயிர் எழுத்துகள்
+            </a>
+            <a href="./Tamilcomponents/Html/க.html">
+                <img src="../../asset/Tamil Home Page Logo/i.jpg" alt="மெய் எழுத்துகள்"> மெய் எழுத்துகள்
+            </a>
+            <a href="./Tamilcomponents/Html/a amma.html">
+                <img src="../../asset/Tamil Home Page Logo/A Amma.jpg" alt="உயிர் எழுத்துகள் படங்கள்"> உயிர் எழுத்துகள் படங்கள்
+            </a>
+            <a href="./Tamilcomponents/Html/ka kapal.html">
+                <img src="../../asset/Tamil Home Page Logo/Ka Kappal.jpg" alt="மெய் எழுத்துகள் படங்கள்"> மெய் எழுத்துகள் படங்கள்
+            </a>
+        </div>
+    </div>
+    <script>
+        function goHome() {
+            window.location.href = "../../Index.html";
+        }
+    </script>
+
 </body>
 </html>

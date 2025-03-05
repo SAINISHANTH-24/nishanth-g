@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./mathsHome.css">
+    <title>Maths Home</title>
+    <link rel="stylesheet" href="mathsHome.css">
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header class="top-header">
+        <img src="../../asset/website Home page logo/Website Logo.jpg" alt="Baby Learner Logo" class="logo">
+        <div class="nav-buttons">
+            <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+        </div>
+    </header>
+
+    <!-- Tamil Learning List with Images -->
     <div class="list">
-    <a href="./Maths components/Html/tables.html"> TABLES</a>
-    <a href="./Maths components/Html/add sub div.html"> ADD SUB MULTI DIV </a>
-    <a href="./Maths components/Html/calculator.html"> CALCULATOR </a>
-    <a href="./Maths components/Html/shapes arrange.html"> SHAPES ARRANGMENT </a>
-    <a href="./Maths components/Html/one 1.html"> ONE TWO THREE </a>
-    <a href="./Maths components/Html/s.html"> SHAPES </a>
-    <a href="./Maths components/Html/c.html"> COLOURS </a>
-    <a href="./Maths components/Html/">  </a>
-</div> 
+        <h2>📚 Mathematics Learning</h2>
+        <div class="content-box">
+            <a href="./Maths components/Html/tables.html">
+                <img src="../../asset/Maths Home Page Logo/Tables.jpg" alt="Tables"> Tables
+            </a>
+            <a href="./Maths components/Html/add sub div.html">
+                <img src="../../asset/Maths Home Page Logo/A S M D.jpg" alt="add sub multi divi"> add sub multi divi
+            </a>
+            <a href="./Maths components/Html/one 1.html">
+                <img src="../../asset/Maths Home Page Logo/One 1.jpg" alt="One-1"> One-1
+            </a>
+            <a href="./Maths components/Html/c.html">
+                <img src="../../asset/Maths Home Page Logo/Colors.jpg" alt="Colours">🇮 Colours
+            </a>
+            <a href="./Maths components/Html/s.html">
+                <img src="../../asset/Maths Home Page Logo/Shapes.jpg" alt="Shapes"> Shapes
+            </a>
+            <a href="./Maths components/Html/calculator.html">
+                <img src="../../asset/Maths Home Page Logo/Calculator.jpg" alt="calculator"> calculator 
+            </a>
+            <a href="./Maths components/Html/shapes arrange.html">
+                <img src="../../asset/Maths Home Page Logo/Shapes Arrange.jpg" alt="Shapes Arrangement"> Shapes Arrangement
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        function goHome() {
+            window.location.href = "../../Index.html";
+        }
+    </script>
+
 </body>
 </html>

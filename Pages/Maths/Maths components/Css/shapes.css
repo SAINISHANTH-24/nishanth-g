@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f99a66;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #000;
 }
 
 .shapes {
@@ -51,16 +51,9 @@ h1 {
 .star {
     background: #6ef607;
     clip-path: polygon(
-        50% 0%, 
-        61% 35%, 
-        98% 35%, 
-        68% 57%, 
-        79% 91%, 
-        50% 70%, 
-        21% 91%, 
-        32% 57%, 
-        2% 35%, 
-        39% 35%
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+        2% 35%, 39% 35%
     );
 }
 
@@ -79,4 +72,48 @@ h1 {
 
 .wrong {
     border: 5px solid red;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+.home-btn:hover {
+    background: #218838;
+    color: white;
 }

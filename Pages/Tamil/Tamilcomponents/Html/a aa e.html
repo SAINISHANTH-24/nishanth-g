@@ -6,6 +6,13 @@
   <title>தமிழ் கற்றல் - அ (அம்மா)</title>
   <link rel="stylesheet" href="../Css/a aa e.css">
 </head>
+<div class="header">
+  <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+  <div class="nav-buttons">
+    <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+    <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+  </div>
+</div>
 <body>
   <h1>தமிழ் எழுத்து: அ</h1>
   <div class="container">
@@ -92,4 +99,13 @@
 
   <script src="../JS/a aa e.js"></script>
 </body>
+<script>
+  function goBack() {
+      window.history.back();
+  }
+
+  function goHome() {
+      window.location.href = "../../../../Index.html";
+  }
+</script>
 </html>

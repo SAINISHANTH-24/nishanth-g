@@ -6,6 +6,13 @@
     <title>Sliding Puzzle Game</title>
     <link rel="stylesheet" href="../Css/puzzles.css">
 </head>
+<div class="header">
+    <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+    <div class="nav-buttons">
+        <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+        <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
+    </div>
+</div>
 <body>
     <div class="game-container">
         <h1>Sliding Puzzle Game</h1>
@@ -14,4 +21,13 @@
     </div>
     <script src="../Js/puzzles.js"></script>
 </body>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goHome() {
+        window.location.href = "../../../../Index.html";
+    }
+</script>
 </html>

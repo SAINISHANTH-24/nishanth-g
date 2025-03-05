@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thirukkural Project</title>
+    <title>திருக்குறள் - Thirukkural</title>
     <link rel="stylesheet" href="../Css/thiru.css">
 </head>
-<body>
-    <div class="container">
-        <h1>திருக்குறள்</h1>
-        <div class="image-container">
-            <img id="chapter-image" src="../../../../asset/Tamil/Thriukural/KadavulVazthu.jpg" alt="அதிகாரம் படம் 1">
-            <img id="chapter-image" src="../../../../asset/Tamil/Thriukural/VanSirapu.jpg" alt="அதிகாரம் படம் 2">
-        </div>
-        <div class="kural-container">
-            <p id="kural-text">திருக்குறள் 1</p>
-            <button id="play-audio">குரல் கேட்க</button>
-        </div>
-        <div class="navigation">
-            <button id="prev-kural">முந்தைய குறள்</button>
-            <button id="next-kural">அடுத்த குறள்</button>
-        </div>
+<div class="header">
+    <img src="../../../../asset/website Home page logo/Website Logo.jpg" alt="Logo" class="logo"> <!-- Change 'assets/logo.png' to your actual logo path -->
+    <div class="nav-buttons">
+        <button class="btn back-btn" onclick="goBack()"> ⬅️ Back </button>
+        <button class="btn home-btn" onclick="goHome()"> 🏠 Home </button>
     </div>
-    <audio id="audio-player" src="../../../../asset/Tamil/Thriukural/001 KADAVUL VAZHTHU.mp3"></audio>
-    <audio id="audio-player" src="../../../asset/Tamil/Thriukural/002 VAAN SIRAPPU.mp3"></audio>
+</div>
+<body>
+
+    <h1>📜 திருக்குறள் 📜</h1>
+
+    <div class="container">
+        <!-- 14 அதிகாரங்கள் பட்டியல் -->
+        <button class="adhigaram-btn" data-id="1">அதிகாரம் 1-10</button>
+        <button class="adhigaram-btn" data-id="2">அதிகாரம் 11-20</button>
+        <button class="adhigaram-btn" data-id="3">அதிகாரம் 21-30</button>
+        <button class="adhigaram-btn" data-id="4">அதிகாரம் 31-40</button>
+        <button class="adhigaram-btn" data-id="5">அதிகாரம் 41-50</button>
+        <button class="adhigaram-btn" data-id="6">அதிகாரம் 51-60</button>
+        <button class="adhigaram-btn" data-id="7">அதிகாரம் 61-70</button>
+        <button class="adhigaram-btn" data-id="8">அதிகாரம் 71-80</button>
+        <button class="adhigaram-btn" data-id="9">அதிகாரம் 81-90</button>
+        <button class="adhigaram-btn" data-id="10">அதிகாரம் 91-100</button>
+        <button class="adhigaram-btn" data-id="11">அதிகாரம் 101-110</button>
+        <button class="adhigaram-btn" data-id="12">அதிகாரம் 111-120</button>
+        <button class="adhigaram-btn" data-id="13">அதிகாரம் 121-130</button>
+        <button class="adhigaram-btn" data-id="14">அதிகாரம் 131-133</button>
+    </div>
+
+    <!-- Display Box (PNG Image + Play Audio Button) -->
+    <div class="display-box" id="display-box">
+        <img id="kural-image" src="" alt="Thirukkural Image">
+        <button id="play-audio-btn">🎵 Play Audio</button>
+        <audio id="kural-audio" src=""></audio>
+    </div>
+
     <script src="../JS/thiru.js"></script>
 </body>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goHome() {
+        window.location.href = "../../../../Index.html";
+    }
+</script>
 </html>

@@ -17,6 +17,16 @@ header {
     padding: 5px;
 }
 
+#selectedColor {
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    width: 80px;
+}
+
 #pictures {
     margin: 10px 0;
 }
@@ -24,7 +34,7 @@ header {
 #pictureSelector {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -46,4 +56,52 @@ header {
     width: 600px;
     height: 400px;
     background-color: #fff;
+}
+.back-btn {
+    background: white;
+    color: #f44336;
+}
+.back-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+.home-btn {
+    background: white;
+    color: #28a745;
+}
+.home-btn:hover {
+    background: #218838;
+    color: white;
+}
+.header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
 }
